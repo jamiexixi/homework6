@@ -103,7 +103,7 @@ a:-webkit-any-link {
 main {
     padding-top: 300px;
     font-family: arial;
-    background: #eee;
+    background: #eaeae8;
     min-height: 100%;
 }
 
@@ -140,14 +140,13 @@ main {
 #large-toolbar {
     position: absolute;
     bottom: 0;
-    transform-origin: left top;
-    margin-bottom: 24px;
-    margin-bottom: 16px;
+    transform-origin: center top;
+    margin-bottom: 40px;
+    margin-bottom: 30px;
     width: 100%;
 }
 
-.small-title,
-.large-title {
+.small-title {
     transform-origin: left top;
     white-space: nowrap;
     flex: 1;
@@ -158,6 +157,19 @@ main {
     position: relative;
 }
 
+.large-title {
+    transform-origin: center top;
+    white-space: nowrap;
+    text-align: center;
+    flex: 1;
+    flex-basis: 0.000000001px;
+    overflow: hidden;
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
+    margin-bottom: 5%
+}
+
 .small-title {
     margin-left: 14px;
     visibility: hidden;
@@ -165,11 +177,16 @@ main {
     text-shadow: 2px 2px 2px #2d2d35;
 }
 
-.large-title {
+.large-title h1 {
     will-change: transform, opacity;
-    font-size: 32px;
-    margin-left: 64px;
+    font-size: 60px;
     text-shadow: 2px 2px 2px #2d2d35;
+}
+
+.large-title h4 {
+    will-change: transform, opacity;
+    font-size: 23px;
+    text-shadow: 1px 1px 1px #2d2d35;
 }
 
 .background-container {
@@ -202,7 +219,7 @@ main {
 }
 
 #header-background-front {
-    background-image: url(picture/back.png);
-    opacity: 0.95;
+    background-image: url(picture/header.png);
+    opacity: 0.9;
     background-position: left center;
 }
